@@ -1,5 +1,7 @@
 #include "bits/stdc++.h"
 
+// assume that 1 beam controlls 3 * 3 cells. So, n * m cells require atleast n/3 *  m/3 beams.
+
 int main()
 {
     int t,n,m;
