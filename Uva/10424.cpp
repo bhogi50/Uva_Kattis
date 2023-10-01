@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <bits/stdc++.h>
 
 int Calculate(char *name)
 {
@@ -6,11 +6,9 @@ int Calculate(char *name)
     while (*name)
     {   
         if (*name >= 'a' && *name <= 'z')
-            // Starts at 1, so used value 1 before 'a'
-            total += *name - 96;
-        
+            total += *name - 'a' + 1;        
         else if (*name >= 'A' && *name <= 'Z')
-            total += *name - 64;
+            total += *name - 'A' + 1;
         ++name;
     }
     
