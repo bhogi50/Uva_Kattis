@@ -1,24 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 
-int main()
-{
-    int n;
-    
-    scanf("%d", &n);
-    
-    int a, tot, div;
-    
-    while(n--)
-    {
-        scanf("%d", &a);
-        
-        if(a>=0)
-        {
-            tot+=a;
-            div+=1;
+int main () {
+
+    int i, n, x, total=0;
+    double output=0;
+    cin >> n;
+
+    for (i=0; i<n; i++){
+        cin >> x;
+        if (x!=-1){
+            output+=x;
+            total++;
         }
     }
-    printf("%f", tot/(div*1.0));
+
+    cout << (output/total);
+
     return 0;
+
 }
