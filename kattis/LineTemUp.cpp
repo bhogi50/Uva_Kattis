@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/* Code Not working. Debug and Fix */
-
-
 int main()
 {
     int n;
@@ -16,7 +13,7 @@ int main()
     scanf("%s", a);
     scanf("%s", b);
     
-    if(a<b)
+    if(strcmp(a,b) < 0)
         k = 0;
     else
         k = 1;
@@ -31,12 +28,12 @@ int main()
         if(k==2)
             continue;
         
-        if(b<s && k==1)
+        if(strcmp(b,s) <0 && k==1)
             k = 2;
-        else if(b>s && k == 0)
+        else if(strcmp(b,s)>0 && k == 0)
             k = 2;
     }
-    
+
     if(k==0)
         printf("INCREASING\n");
     else if(k==1)
